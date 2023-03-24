@@ -1,0 +1,337 @@
+/* Global styles */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+/* Home section */
+
+#home {
+  height: 100vh;
+  background-image: url('https://tanimulyo.weebly.com/uploads/1/0/7/7/107778063/background-images/1993775054.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home h1 {
+  font-size: 5.5rem;
+  color: #f8eaa9;
+  text-shadow: 0px 0px #000;
+}
+
+#home h2 {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 0px 0px #000;
+}
+
+#home p {
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 0px 0px #000;
+}
+
+/* Navigation bar */
+
+.navbar {
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.navbar-brand img {
+  max-height: 60px; /* adjust this value as needed */
+  padding: 5px; /* adjust this value as needed */
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #333;
+}
+
+.nav-link:hover {
+  color: #000;
+}
+
+/* About Us section */
+
+#about {
+  padding: 5rem 0;
+  background-color: #f8f9fa; /* adjust this value as needed */
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+#about p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+#about img {
+  max-width: 100%;
+  height: auto;
+  max-height: 640px; /* adjust this value as needed */
+  padding: 5px; /* adjust this value as needed */
+  border-radius: 20px; /* adjust this value as needed */
+}
+
+/* Our Management section */
+
+#management {
+  padding: 5rem 0;
+}
+
+#management .card {
+  border: none;
+  box-shadow: none;
+}
+
+#management .card img {
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+  max-height: 350px; /* adjust this value as needed */
+}
+
+#management h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.management-item {
+  margin-bottom: 3rem;
+}
+
+.management-item h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.management-item p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+
+/* Products section */
+
+#products {
+  padding: 5rem 0;
+  background-color: #f8f9fa; /* adjust this value as needed */
+}
+
+#products h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.product-item {
+  margin-bottom: 3rem;
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-item h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.product-item p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Our Process section */
+
+#process {
+  padding: 5rem 0;
+}
+
+#process img {
+  border-radius: 10%;
+  max-width: 100%;
+  height: auto;
+  max-height: 250px; /* adjust this value as needed */
+}
+
+#process h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.process-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.process-item img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 2rem;
+}
+
+.process-item h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.process-item p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Gallery section */
+
+#gallery {
+  padding: 80px 0;
+  background-color: #f8f9fa; /* adjust this value as needed */
+}
+
+#gallery .row {
+  margin: 0 -15px;
+}
+
+#gallery img {
+  border-radius: 10%;
+  max-width: 100%;
+  height: auto;
+  max-height: 450px; /* adjust this value as needed */
+  margin-bottom: 30px;
+}
+
+#gallery h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.gallery-item {
+  margin-bottom: 5rem;
+}
+
+/* Contact Us section */
+
+#contact {
+padding: 5rem 0;
+}
+
+#contact h2 {
+font-size: 2.5rem;
+color: #333;
+margin-bottom: 2rem;
+}
+
+.contact-form {
+max-width: 500px;
+margin: 0 auto;
+}
+
+.form-group {
+margin-bottom: 1.5rem;
+}
+
+.form-control {
+font-size: 1.2rem;
+padding: 0.8rem 1rem;
+border-radius: 5px;
+border: 2px solid #ddd;
+}
+
+.form-control:focus {
+border-color: #333;
+}
+
+.btn-primary {
+background-color: #333;
+border-color: #333;
+font-size: 1.2rem;
+padding: 0.8rem 1rem;
+border-radius: 5px;
+font-weight: 700;
+transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+background-color: #000;
+border-color: #000;
+}
+
+/* Footer */
+
+footer {
+background-color: #333;
+color: #fff;
+padding: 3rem 0;
+}
+
+.footer-item {
+margin-bottom: 1rem;
+}
+
+.footer-item h4 {
+font-size: 1.5rem;
+margin-bottom: 1rem;
+}
+
+.footer-item p {
+font-size: 1.2rem;
+line-height: 1.5;
+margin-bottom: 1rem;
+}
+
+.social-icons {
+display: flex;
+justify-content: center;
+}
+
+.social-icons a {
+display: inline-block;
+margin-right: 1rem;
+}
+
+.social-icons i {
+font-size: 2rem;
+color: #fff;
+transition: all 0.2s ease;
+}
+
+.social-icons i:hover {
+color: #ccc;
+}
