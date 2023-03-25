@@ -66,14 +66,16 @@
                 <div class="col-md-12 text-center">
                     <h2>About Us</h2>
                     <img src="./img/about-us/about-us.webp" alt="About Us Image">
-                    <h7>Jajaran Komisaris, Direksi, & karyawan CV. TANI MULYO</h7>
-                    <br><br>
+                    <h7>Jajaran Komisaris, Direksi, & karyawan <b>CV. TANI MULYO</b></h7>
+                </div>
+                <div class="col-md-12 text-justify">
+                <br>
                     <p>
                         Pabrik produksi pakan ternak sapi/ kambing terlaris di Bogor berdiri sejak tahun 2008, kami menggunakan sumber bahan baku pakan pilihan dikelasnya. Dengan cikal bakal seorang sarjana peternakan lulusan dari Universitas Diponegoro dan Dokter Hewan lulusan Universitas Gadjah Mada. Kami yakin produk olahan kami akan menjadi pilihan terbaik bagi ternak kesayangan anda.
                     </p>
                 </div>
                 <br>
-                <div class="col-md-12 text-left">
+                <div class="col-md-12 text-justify">
                     <h4>Visi</h4>
                     <p>
                         Menjadi Perusahaan Pakan Ternak yang terbaik & berkontribusi dalam Memajukan Peternakan Indonesia.
@@ -219,44 +221,50 @@
             </div>
             <div class="row">
                 <div class="col-md-4 col-sm-6">
-                    <img src="./img/gallery/gallery-1.webp" alt="Gallery Image 1">
+                    <img class="thumbnail" src="./img/gallery/gallery-1.webp" alt="Gallery Image 1">
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <img src="./img/gallery/gallery-2.webp" alt="Gallery Image 2">
+                    <img class="thumbnail" src="./img/gallery/gallery-2.webp" alt="Gallery Image 2">
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <img src="./img/gallery/gallery-3.webp" alt="Gallery Image 3">
+                    <img class="thumbnail" src="./img/gallery/gallery-3.webp" alt="Gallery Image 3">
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <img src="./img/gallery/gallery-4.webp" alt="Gallery Image 4">
+                    <img class="thumbnail" src="./img/gallery/gallery-4.webp" alt="Gallery Image 4">
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <img src="./img/gallery/gallery-5.webp" alt="Gallery Image 5">
+                    <img class="thumbnail" src="./img/gallery/gallery-5.webp" alt="Gallery Image 5">
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <img src="./img/gallery/gallery-6.webp" alt="Gallery Image 6">
+                    <img class="thumbnail" src="./img/gallery/gallery-6.webp" alt="Gallery Image 6">
                 </div>
                   <div class="col-md-4 col-sm-6">
-                    <img src="./img/gallery/gallery-7.webp" alt="Gallery Image 7">
+                    <img class="thumbnail" src="./img/gallery/gallery-7.webp" alt="Gallery Image 7">
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <img src="./img/gallery/gallery-8.webp" alt="Gallery Image 8">
+                    <img class="thumbnail" src="./img/gallery/gallery-8.webp" alt="Gallery Image 8">
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <img src="./img/gallery/gallery-9.webp" alt="Gallery Image 9">
+                    <img class="thumbnail" src="./img/gallery/gallery-9.webp" alt="Gallery Image 9">
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <img src="./img/gallery/gallery-10.webp" alt="Gallery Image 10">
+                    <img class="thumbnail" src="./img/gallery/gallery-10.webp" alt="Gallery Image 10">
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <img src="./img/gallery/gallery-11.webp" alt="Gallery Image 11">
+                    <img class="thumbnail" src="./img/gallery/gallery-11.webp" alt="Gallery Image 11">
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <img src="./img/gallery/gallery-12.webp" alt="Gallery Image 13">
+                    <img class="thumbnail" src="./img/gallery/gallery-12.webp" alt="Gallery Image 13">
                 </div>
             </div>
         </div>
     </section>
+
+    <!--Modal-->
+    <div id="myModal" class="modal">
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
 
     <!-- Contact Us section -->
         <section id="contact">
@@ -318,5 +326,34 @@
 
         <script src="./js/active-nav.js"></script>
         <script src="./js/show-hide-nav.js"></script>
+        <script>
+            // Get the modal
+            const modal = document.getElementById('myModal');
+            const modalImg = document.getElementById("img01");
+            const captionText = document.getElementById("caption");
+            
+            var img = document.querySelectorAll('.thumbnail');
+                
+            for (var i=0; i<img.length; i++){
+                
+                img[i].onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                modalImg.alt = this.alt;
+                captionText.innerHTML = this.alt;
+            }
+                 
+            }
+            
+            // When the user clicks on <span> (x), close the modal
+            modal.onclick = function() {
+                img01.className += " out";
+                setTimeout(function() {
+                   modal.style.display = "none";
+                   img01.className = "modal-content";
+                 }, 400);
+                
+             }       
+        </script>
     </body>
 </html>
