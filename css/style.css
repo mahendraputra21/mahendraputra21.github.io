@@ -45,7 +45,24 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fff;
   padding: 1rem;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  z-index: 1;
+  
 }
+
+.navbar.show {
+  transform: translateY(0);
+}
+
+.navbar.hide {
+  transform: translateY(-100%);
+}
+
 
 .navbar-brand {
   font-size: 2rem;
@@ -363,18 +380,3 @@ color: #ccc;
   transform: scale(1.1);
 }
 
-/* 
-#go-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: #333;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 10px;
-} */
