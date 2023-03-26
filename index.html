@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CV. Tani Mulyo</title>
+    
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+
     <!-- Fonts -->
     <link href="./css/font-google-apis.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
@@ -263,12 +265,6 @@
         </div>
     </section>
 
-    <!--Modal-->
-    <div id="myModal" class="modal">
-        <img class="modal-content" id="img01">
-        <div id="caption"></div>
-    </div>
-
     <!-- Contact Us section -->
         <section id="contact">
             <div class="container">
@@ -322,41 +318,20 @@
             </a>
         </div>
 
-        <!-- Bootstrap JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!--Modal-->
+        <div id="myModal" class="modal">
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
 
+        <!-- Bootstrap JavaScript -->
+        <script src="./js/jquery3.3.1.min.js"></script>
+        <script src="./js/popper1.14.7.min.js"></script>
+        <script src="./js/bootstrap4.3.1.min.js"></script>
+
+        <!-- Custom script js-->
         <script src="./js/active-nav.js"></script>
         <script src="./js/show-hide-nav.js"></script>
-        <script>
-            // Get the modal
-            const modal = document.getElementById('myModal');
-            const modalImg = document.getElementById("img01");
-            const captionText = document.getElementById("caption");
-            
-            var img = document.querySelectorAll('.thumbnail');
-                
-            for (var i=0; i<img.length; i++){
-                
-                img[i].onclick = function(){
-                modal.style.display = "block";
-                modalImg.src = this.src;
-                modalImg.alt = this.alt;
-                captionText.innerHTML = this.alt;
-            }
-                 
-            }
-            
-            // When the user clicks on <span> (x), close the modal
-            modal.onclick = function() {
-                img01.className += " out";
-                setTimeout(function() {
-                   modal.style.display = "none";
-                   img01.className = "modal-content";
-                 }, 400);
-                
-             }       
-        </script>
+        <script src="./js/image-modal.js"></script>
     </body>
 </html>
