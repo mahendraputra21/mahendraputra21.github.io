@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="./css/style.css">
 
     <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="./css/font-google-apis.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
 </head>
-<body>
+<body class="bg-light">
 
     <!-- Navigation bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -47,6 +48,15 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact Us</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="theme-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-sun"></i> Light
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="theme-dropdown">
+                          <a class="dropdown-item" href="#" id="light-theme-link"><i class="fas fa-sun"></i> Light</a>
+                          <a class="dropdown-item" href="#" id="dark-theme-link"><i class="fas fa-moon"></i> Dark</a>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -57,7 +67,7 @@
             <div class="row">
                 <div class="col-md-12 text-right">
                     <h1>CV. Tani Mulyo</h1>
-                    <h2>Feed Mill & General Trading</h2>
+                    <h3>Feed Mill & General Trading</h3>
                     <p>Committed to Quality</p>
                 </div>
             </div>
@@ -75,18 +85,18 @@
                 </div>
                 <div class="col-md-12 text-justify">
                 <br>
-                    <p>
+                    <p id="about-pabrik">
                         Pabrik produksi pakan ternak sapi/ kambing terlaris di Bogor berdiri sejak tahun 2008, kami menggunakan sumber bahan baku pakan pilihan dikelasnya. Dengan cikal bakal seorang sarjana peternakan lulusan dari Universitas Diponegoro dan Dokter Hewan lulusan Universitas Gadjah Mada. Kami yakin produk olahan kami akan menjadi pilihan terbaik bagi ternak kesayangan anda.
                     </p>
                 </div>
                 <br>
                 <div class="col-md-12 text-justify">
                     <h4>Visi</h4>
-                    <p>
+                    <p id="about-visi">
                         Menjadi Perusahaan Pakan Ternak yang terbaik & berkontribusi dalam Memajukan Peternakan Indonesia.
                     </p>
                     <h4>Misi</h4>
-                    <p>
+                    <p id="about-misi">
                         Memproduksi dan menyediakan pakan ternak yang berkualitas dengan harga yang kompetitif dan berkelanjutan.
                     </p>
                     <h4>Tujuan</h4>
@@ -107,7 +117,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h2>Our Management</h2>
-                    <p>Management Profile</p>
+                    <p id="profile">Management Profile</p>
                 </div>
             </div>
             <div class="row">
@@ -148,7 +158,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h2>Our Products</h2>
-                    <p>Check out our wide selection of animal feed products.</p>
+                    <p id="product-caption">Check out our wide selection of animal feed products.</p>
                 </div>
             </div>
             <div class="row">
@@ -157,7 +167,7 @@
                         <img src="./img/our-products/product-mulyo-feed-a.webp" alt="Product 1">
                         <div class="card-body">
                             <h5 class="card-title">MULYO FEED POTONG A</h5>
-                            <p class="card-text">Pakan ini digunakan untuk sapi dara, sapi jantan, & kambing/domba       </p>
+                            <p class="card-text">Pakan ini digunakan untuk sapi dara, sapi jantan, & kambing/domba</p>
                         </div>
                     </div>
                 </div>
@@ -182,34 +192,34 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h2>Our Process</h2>
-                    <p>Learn more about our process for creating quality animal feed.</p>
+                    <p id="process-caption">Learn more about our process for creating quality animal feed.</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 col-lg-4">
                     <img src="./img/our-process/process-1.webp" alt="Step 1">
                     <h4>1. Penerimaan Bahan Baku</h4>
-                    <p>Dilakukan pengecekan kualitas bahan baku oleh bagian quality control</p>
+                    <p id="process-1">Dilakukan pengecekan kualitas bahan baku oleh bagian quality control</p>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <img src="./img/our-process/process-2.webp" alt="Step 2">
                     <h4>2. Proses Produksi</h4>
-                    <p>Penimbangan bahan baku sesuai formula, untuk bahan baku yang kasar dilakukan penggilingan mengunakan Hummer Mill. Setelah siap  bahan baku dimasukan kedalam Mesin Mixer agar tercampur secara merata.</p>
+                    <p id="process-1">Penimbangan bahan baku sesuai formula, untuk bahan baku yang kasar dilakukan penggilingan mengunakan Hummer Mill. Setelah siap  bahan baku dimasukan kedalam Mesin Mixer agar tercampur secara merata.</p>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <img src="./img/our-process/process-3.webp" alt="Step 3">
                     <h4>3. Proses Pengemasan</h4>
-                    <p>Setelah selesai dilakukan Mixing, kemudian dikemas kedalam karung yang dilapisi plastik & ditimbang menggunakan timbangan digital, lalu di jahit.</p>
+                    <p id="process-1">Setelah selesai dilakukan Mixing, kemudian dikemas kedalam karung yang dilapisi plastik & ditimbang menggunakan timbangan digital, lalu di jahit.</p>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <img src="./img/our-process/process-4.webp" alt="Step 4">
                     <h4>4. Proses Pengiriman</h4>
-                    <p>Pakan yang telah selesai dikemas akan didistribusikan mengunakan armada truk & mobil pickup</p>
+                    <p id="process-1">Pakan yang telah selesai dikemas akan didistribusikan mengunakan armada truk & mobil pickup</p>
                 </div>
                  <div class="col-md-6 col-lg-4">
                     <img src="./img/our-process/process-5.webp" alt="Step 4">
                     <h4>5. Laboratorium Lapangan</h4>
-                    <p>Kami juga melakukan riset dikandang kami sendiri untuk dilakukan uji coba pakan kami ke berbagai jenis sapi dengan umur dan bobot yang berbeda-beda.</p>
+                    <p id="process-1">Kami juga melakukan riset dikandang kami sendiri untuk dilakukan uji coba pakan kami ke berbagai jenis sapi dengan umur dan bobot yang berbeda-beda.</p>
                 </div>
             </div>
         </div>
@@ -221,7 +231,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h2>Gallery</h2>
-                    <p>Check out some photos from our office.</p>
+                    <p id="process-1">Check out some photos from our office.</p>
                 </div>
             </div>
             <div class="row">
@@ -274,23 +284,23 @@
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <h2>Contact Us</h2>
-                        <p>Let visitors know how you’d like them to get and stay in touch.</p>
+                        <p id="process-1">Let visitors know how you’d like them to get and stay in touch.</p>
                     </div>
                 </div><br>
                 <div class="row">
                     <div class="col-md-4">
                         <h4>Hours</h4>
-                        <p>Monday - Friday | 8:30 AM – 16:30 PM </p>
-                        <p>Saturday | 8:30 AM – 12:00 PM</p>
+                        <p id="process-1">Monday - Friday | 8:30 AM – 16:30 PM </p>
+                        <p id="process-1">Saturday | 8:30 AM – 12:00 PM</p>
                     </div>
                     <div class="col-md-4">
                         <h4>Corporate offices</h4>
-                        <p>Jl. Desa Tegal No. 75 Kampung Hambulu. Desa Tegal, Kecamatan Kemang. Kabupaten Bogor</p>
+                        <p id="process-1">Jl. Desa Tegal No. 75 Kampung Hambulu. Desa Tegal, Kecamatan Kemang. Kabupaten Bogor</p>
                     </div>
                     <div class="col-md-4">
                         <h4>Contact Info</h4>
-                        <p>Email : <a href="mailto:prabowo.setyo25@gmail.com">prabowo.setyo25@gmail.com</a></p>
-                        <p>Phone : 0878-7016-2860</p>
+                        <p id="process-1">Email : <a href="mailto:prabowo.setyo25@gmail.com">prabowo.setyo25@gmail.com</a></p>
+                        <p id="process-1">Phone : 0878-7016-2860</p>
                     </div>
                 </div>
                     <div class="row">
@@ -336,5 +346,8 @@
         <script src="./js/active-nav.js"></script>
         <script src="./js/show-hide-nav.js"></script>
         <script src="./js/image-modal.js"></script>
+
+        <!--dark/light mode-->
+        <script src="./js/dark-mode.js"></script>
     </body>
 </html>

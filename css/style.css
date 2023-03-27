@@ -33,6 +33,12 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: 0px 0px #000;
 }
 
+#home h3 {
+  font-size: 3.5rem;
+  color: #fff;
+  text-shadow: 0px 0px #000;
+}
+
 #home p {
   font-size: 2rem;
   color: #fff;
@@ -88,7 +94,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #about {
   padding: 5rem 0;
-  background-color: #f8f9fa; /* adjust this value as needed */
 }
 
 #about h2 {
@@ -157,7 +162,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #products {
   padding: 5rem 0;
-  background-color: #f8f9fa; /* adjust this value as needed */
 }
 
 #products h2 {
@@ -245,7 +249,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #gallery {
   padding: 80px 0;
-  background-color: #f8f9fa; /* adjust this value as needed */
 }
 
 #gallery .row {
